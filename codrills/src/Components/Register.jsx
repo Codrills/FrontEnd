@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios"
+
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -64,20 +64,20 @@ class Registration extends Component {
         Shop Name: ${this.state.shop_name}
         Location: ${this.state.location_id}
       `);
-      axios.post('', copyofState)
-        .then(res => {
-          console.log(`AXIOS SUCCESS!`, res.data);
-          alert(res.data.message);
-        })
-        .catch(err => {
-          console.log(`AXIOS FAILURE!`, err);
-          alert(err);
-        })
-    } else {
-      console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
-      alert('there was an error!')
-    }
-  };
+  //     axios.post('', copyofState)
+  //       .then(res => {
+  //         console.log(`AXIOS SUCCESS!`, res.data);
+  //         alert(res.data.message);
+  //       })
+  //       .catch(err => {
+  //         console.log(`AXIOS FAILURE!`, err);
+  //         alert(err);
+  //       })
+  //   } else {
+  //     console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
+  //     alert('there was an error!')
+  //   }
+  // };
 
   handleChange = e => {
     e.preventDefault();
