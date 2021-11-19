@@ -8,12 +8,12 @@ import Home from './Components/Home'
 function App() {
   return (
     <div>
-<Navigation/>
-    <Routes>
-      <Route path="/" render={() => <Home/>}/>
-      <Route exact path="/" render={() => <Login/>}/>
-      <Route path="/register" render={() => <Register/>}/>
-    </Routes>
+      <Navigation/>
+        <Routes>
+          <Route path="/" render={() => <Home/>}/>
+          <Route exact path="/" render={() => <Login/>}/>
+          <Route path="/register" render={() => <Register/>}/>
+        </Routes>
 
     </div>
 
